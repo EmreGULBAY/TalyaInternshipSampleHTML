@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hotel-name h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rooms-section {
+    padding: 2rem;
+}
+
+.rooms-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.room {
+    flex: 1 1 calc(33.333% - 1rem);
+    max-width: 500px;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.room img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.room h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.room p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .room {
+        flex: 1 1 calc(50% - 1rem);
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .room {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+footer .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer .footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .footer-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
