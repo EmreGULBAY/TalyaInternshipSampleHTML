@@ -89,11 +89,12 @@ nav {
 }
 
 .room {
-    flex: 1 1 calc(33.333% - 1rem);
-    max-width: 500px;
-    margin-bottom: 2rem;
+    background-color: #f1f1f1;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 2em);
     box-sizing: border-box;
-    text-align: center;
 }
 
 .room img {
