@@ -28,10 +28,9 @@ paymentForm.addEventListener('submit', function(event) {
 
     const bookingData = {
         roomId: roomIdInput.value,
-        amount: amountInput.value,
+        amount: Number(amountInput.value),
         currency: currencyInput.value
     };
-/*
     fetch('http://localhost:3000/booking', {
         method: 'POST',
         headers: {
@@ -41,6 +40,7 @@ paymentForm.addEventListener('submit', function(event) {
     })
     .then(response => response.json())
     .then(data => {
+        console.log(data);
         if (data.success) {
             alert('Payment successful! Booking confirmed.');
         } else {
@@ -50,15 +50,5 @@ paymentForm.addEventListener('submit', function(event) {
     .catch(error => {
         console.error('Error:', error);
         alert('An error occurred. Please try again.');
-    });*/
-    fetch('http://localhost:3000/', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(res => res.json()).then((res) => {
-        console.log(res.data)
-    }).catch((err) => {
-        console.log(err)    
-    })
+    });
 });
